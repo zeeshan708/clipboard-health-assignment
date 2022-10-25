@@ -42,7 +42,7 @@ For this project to run, you would need to install below 3 dependencies on your 
 
 ## Steps to Execute
 
-1. Import/Open the project in intelliJ or any other IDE
+1. Import/Open the project in intelliJ or any other IDE or Clone the project from "https://github.com/zeeshan708/clipboard-health-assignment.git"
 2. Build project to install all maven dependencies
 3. Run command "mvn clean verify" in terminal or directly run test class
 
