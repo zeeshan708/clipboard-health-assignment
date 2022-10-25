@@ -19,6 +19,12 @@ import java.util.logging.Level;
 
 import static java.lang.Boolean.parseBoolean;
 
+
+/**
+ * @author Zeeshan Asghar
+ * This class contains methods to dynamically return the capabilities(configurations) for each browser
+ * @date 24-10-2022
+ */
 public class CapabilitiesFactory {
     private static Config config = EnvFactory.getInstance().getConfig();
 
@@ -48,7 +54,7 @@ public class CapabilitiesFactory {
         chromeOptions.setHeadless(HEADLESS);
         chromeOptions.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems and a must-have step to run tests in docker pipeline or docker selenium grid
         chromeOptions.addArguments("--no-sandbox"); // overcome limited resource problems and a should-have step to run tests in docker pipeline or docker selenium grid
-        chromeOptions.addArguments("--window-size=1920,1080");
+        // chromeOptions.addArguments("--window-size=1920,1080");
         chromeOptions.addArguments("start-maximized");
         chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         chromeOptions.addArguments("--enable-javascript");

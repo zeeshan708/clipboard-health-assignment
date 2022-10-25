@@ -8,6 +8,13 @@ import lombok.extern.slf4j.Slf4j;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+
+/**
+ * @author Zeeshan Asghar
+ * This class contains methods to return url of the website to be tested
+ * as per the url configured in config file.
+ * @date 24-10-2022
+ */
 @Slf4j
 public class URLFactory {
     private static Config config = EnvFactory.getInstance().getConfig();

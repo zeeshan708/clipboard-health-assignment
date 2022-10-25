@@ -88,6 +88,8 @@
             <artifactId>log4j-core</artifactId>
             <version>${log4j.core}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.awaitility/awaitility -->
+
     </dependencies>
     <build>
         <plugins>
@@ -112,13 +114,13 @@
         </plugins>
     </build>
     <reporting>
-        <plugins>
-            <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-report-plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>${maven.surefire.plugin}</version>
-            </plugin>
-        </plugins>
+<!--        <plugins>-->
+<!--            &lt;!&ndash; https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-report-plugin &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-surefire-report-plugin</artifactId>-->
+<!--                <version>${maven.surefire.plugin}</version>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
     </reporting>
 </project>
